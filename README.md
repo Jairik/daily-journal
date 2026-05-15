@@ -1,21 +1,11 @@
-# bun-react-template
+# Tracka - Personal Journaling App
 
-To install dependencies:
+A basic web interface (to eventually be paired with a terminal utility) for personal journaling. Offers some cool visualizations and whatnot.
 
-```bash
-bun install
-```
+## Tentative Stack
 
-To start a development server:
-
-```bash
-bun dev
-```
-
-To run for production:
-
-```bash
-bun start
-```
-
-This project was created using `bun init` in bun v1.3.13. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+- React & Bun for Frontend
+- Go for Backend
+- Neon Postgres for Database
+- TBD Auth (might try something new)
+- TBD Hosting, probably Fly.io
