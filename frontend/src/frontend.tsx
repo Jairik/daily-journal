@@ -1,8 +1,6 @@
 /**
- * This file is the entry point for the React app, it sets up the root
- * element and renders the App component to the DOM.
- *
- * It is included in `src/index.html`.
+ * Entry point. Renders <App/> into #root and preserves the React root
+ * across HMR reloads via import.meta.hot.data.
  */
 
 import { StrictMode } from "react";
@@ -16,5 +14,4 @@ const app = (
   </StrictMode>
 );
 
-// https://bun.com/docs/bundler/hot-reloading#import-meta-hot-data
 (import.meta.hot.data.root ??= createRoot(elem)).render(app);
